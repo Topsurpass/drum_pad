@@ -1,70 +1,54 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Mini Drum Machine Application
+**Tagline: Creating beats, one key at a time!**
+## Introduction
+The Mini Drum Machine Application is a software project that aims to create a simple and interactive drum machine, allowing users to produce beats using designated keyboard keys. The application will provide an intuitive user interface, offering a fun and creative way for music enthusiasts to experiment with drum sounds.
+## Team Members
+- Olowosuyi Temitope
+- Favour Edubio
+## Technologies
+The project will be developed using the following technologies:
+- React: For building the user interface and managing components efficiently.
+- Redux: For state management, ensuring a consistent and predictable application state.
+- HTML: For structuring the web page and content.
+- CSS: For styling the user interface and enhancing the visual appeal.
+- JavaScript: For implementing the application logic and interactivity.
+## Project Objectives
+- Create an easy-to-use drum machine application that appeals to beginners.
+- Allow users to produce drum sounds by pressing specific keyboard keys (Q, W, E, A, S, D, Z, X, C).
+- Implement a visually appealing user interface to enhance the user experience.
+- Enable users to record and playback their drum beats for creative purposes. 
+## Features
+The Mini Drum Machine Application will include the following key features:
+- Sound Mapping: Assigning specific drum sounds to each of the limited keyboard keys (Q, W, E, A, S, D, Z, X, C).
+- Real-time Playback: Producing drum sounds in real-time as users press the corresponding keyboard keys.
+- User-friendly Interface: Designing an intuitive and visually appealing interface for easy navigation and usage.
+- Record and Playback: Allowing users to record their drum beats and play them back for review and creative exploration.
+- Sound Library: Including a selection of drum sounds to choose from and the option to add custom sounds.
+## Data Population
+The application will not require a backend or database for data storage. All necessary data for the drum machine, such as sound samples and configuration settings, will be stored directly within the application.
+## Branching and Merging Process
+For version control and collaboration, our team will follow the GitHub flow:
+- Main Branch: The 'main' branch will contain the stable and production-ready code.
+- Feature Branches: Each team member will create a new branch for their feature development.
+- Pull Requests: After completing a feature, the team member will create a pull request to merge their branch into 'main.'
+- Code Reviews: Pull requests will be reviewed by another team member before merging.
+- Continuous Integration: We will use automated testing and code checks to ensure code quality before merging.
+## Testing Approach
+For testing, we will employ the following tools and processes:
+- Integration Testing: Conducting integration tests to ensure the seamless interaction of different components.
+- User Testing: Involving potential users to perform usability testing and gather feedback for improvements.
+## Deployment Strategy
+For deployment, we will use a continuous integration and continuous deployment (CI/CD) approach. Upon each successful merge into the 'main' branch, an automated CI/CD will trigger the deployment process to the hosting environment.
+## Similar Products
+Some similar drum machine applications that currently exist are:
+- HTML5 Drum Machine: This is a simple drum machine web application built with HTML5 and JavaScript. It allows users to create beats using the keyboard keys.
+### `Difference:` Our Mini Drum Machine will focus on a limited set of keyboard keys for simplicity.
+- React Drum Machine: Another drum machine application built with React, Redux, and Web Audio API.
+### `Difference`: Our Mini Drum Machine will have a unique keyboard layout and focus on a simple user interface.
+## Challenges
+The primary challenges our project will experience due to time constraints and other factors include:
+- Limited Keyboard Input: Our drum machine will be designed using only the specified keyboard keys (Q, W, E, A, S, D, Z, X, C).
+- Inability to get access to real keyboard sounds to populate our app.
+- Our app is designed for only beginners due to its limited features.
+## Conclusion
+The Mini Drum Machine Application will offer a creative and enjoyable experience for users to produce their drum beats using a minimal set of keyboard keys. By combining the power of React, Redux, HTML, CSS, and JavaScript, we aim to deliver a user-friendly, feature-rich, and aesthetically pleasing application that sparks the musical inspiration of users.
