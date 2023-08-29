@@ -1,0 +1,23 @@
+.drum-container{
+    display: grid;
+    width:100%;
+}
+.bothButtons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin-left: 20px;
+}
+.button{
+    width:97%;
+    height:100px;
+    margin: 2px;
+}
+@media only screen and (max-width: 769px) {
+    .drum-container{
+        width: 50%;
+    }
+    .bothButtons {
+        margin-left: 5px;
+    }
+}

@@ -53,21 +53,21 @@ import { createSlice } from "@reduxjs/toolkit";
       keyCode: 67,
       value: 'C',
       id: 'Snare',
-      url: 'https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3' }];
+      url: 'https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3' }
+    ];
 
-
-      export const drumSlice2 = createSlice({
-        name: 'drum2',
-        initialState,
-      
-        reducers:{
-      
-         bank2ToggleOff:(state)=>{
-          return state;
-      
-          }
+    export const drumSlice2 = createSlice({
+      name: 'drum2',
+      initialState,
+    
+      reducers:{
+    
+        bank2ToggleOff:(state)=>{
+        return state;
+    
         }
-      })
-      
-      export const {bank2ToggleOff} = drumSlice2.actions;
-      export default drumSlice2.reducer;
+      }
+    })
+    
+    export const {bank2ToggleOff} = drumSlice2.actions;
+    export default drumSlice2.reducer;

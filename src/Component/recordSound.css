@@ -1,0 +1,33 @@
+.container {
+    height: 70px;
+    width: 70%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+}
+button {
+    width: 100px;
+    height: 50%;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+}
+.play {
+    background-color: green;
+}
+.stop {
+    background-color: yellow;
+    color: black;
+}
+.del {
+    background-color: red;
+}
+
+@media only screen and (max-width: 769px) {
+    .container {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

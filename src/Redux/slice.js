@@ -56,8 +56,6 @@ import { createSlice } from "@reduxjs/toolkit";
           url: 'https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3' }
         ];
 
-               
-
 export const drumSlice = createSlice({
     name: 'drum',
     initialState,
@@ -73,4 +71,3 @@ export const drumSlice = createSlice({
 
 export const {bankToggleOff} = drumSlice.actions;
 export default drumSlice.reducer;
-
