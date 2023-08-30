@@ -11,6 +11,7 @@
     display:inline-block;
     height:34px;
     width:60px;
+    margin: 15px;
 }
 .switch input{
     opacity: 0;
@@ -67,6 +68,7 @@ input:checked + .slider:before{
 
 .slideContainer{
     width: 75%;
+    margin: 10px 0px;
 }
 .slide{
     appearance: none;

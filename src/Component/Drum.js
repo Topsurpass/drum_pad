@@ -71,6 +71,7 @@ export const DrumMachine = () =>{
                 document.getElementById("bank2But").style.display="none";
                 document.getElementById("display").innerText= "Kicks";
             }
+            record.splice(0, record.length);
     }
 
    //This function handles the playing of the audios
@@ -80,18 +81,23 @@ export const DrumMachine = () =>{
             document.getElementById("display").innerText= showId;
         } 
     }
+
    //This function handles the display of the switch toggle
     const handleSwitch = () =>{
         switchOff(!switchOn);
-        switchOn === true ? document.getElementById("switch").innerText = "OFF":
-        document.getElementById("switch").innerText = "ON";
+        if (switchOn === true) {
+            record.splice(0, record.length);
+            document.getElementById("switch").innerText = "OFF";
+        } else {
+            document.getElementById("switch").innerText = "ON";
+        }
     }
 
     //This function saves each audio url of each button pressed
     const saveRecord = (url) =>{
         switchOn === true ? record.push(url) : record.splice(0, record.length);
     }
-    // Off should stop the beat
+
     //This function plays the audio url saved in record array
     const playRecord = () =>{
         if (switchOn) {
@@ -133,14 +139,11 @@ export const DrumMachine = () =>{
                     handlePlay={handlePlay}
                     mouseVol={mouseVol}
                     saveRecord={saveRecord}/>
-
                 <Controls handleSwitch={handleSwitch} 
                     handleBankSwitch={handleBankSwitch}
                     handleVolDisplay={handleVolDisplay}
                     switchOn={switchOn}/> 
-                
             </div>
-
             <RecordSound playRecord={playRecord}
                 stopRecord={stopRecord}
                 clearRecording={clearRecording}/>
