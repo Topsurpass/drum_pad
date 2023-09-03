@@ -1,0 +1,40 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.ClientContact{
+    width: 80%;
+    font-size: 12px;
+    border: 2px solid #55a3da;
+    background-color: #55a3da;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register, .messg{
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding-left: 3%;
+    font-size: 15px;
+    outline: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.register {
+    height:50px;
+}
+.messg {
+    padding-top:20px;
+    height: 150px;
+}
+.submit{
+    height:40px;
+    width: 40%;
+    border: 1px solid grey;
+    border-radius: 10px; 
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:#12152d;
+    color:white;
+}

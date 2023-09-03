@@ -1,0 +1,200 @@
+body{
+    background-color: rgba(16,22,48,255);
+    color: white; 
+    padding: 20px 25px;
+}
+.contain {
+    width: 100%;
+}
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 10%;
+    border: 2px solid #4a37c1;
+    height: 33px;
+    margin-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 10%;
+}
+nav ul li {
+    margin-left: 10px;
+} 
+.contact, #visit {
+    color: white;
+    border-radius: 5px;
+    border: 0px solid;
+    height: 30px;
+    background-color: #3e70a7;
+    width: 200px;
+    height: 50px;
+}
+header button:hover {
+    background-color:#97c9e6;
+    color: black;
+}
+main {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.intro {
+    margin-left: 70px
+}
+section .desc {
+    color: #898ea4;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 20px;
+}
+section .job_title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 100px;
+}
+.about div {
+    text-align: justify;
+}
+.intro_pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.profile_pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+.intro_text {
+    width: 50%;
+}
+.intro a, .footCon, #visit a {
+    color: white;
+    text-decoration: none;
+}
+.portfolio {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    width: 100%;
+}
+.portfolio ul li {
+     margin-left: 40px;
+}
+.portfolio ul li:first-child {
+    margin-left: 0px;
+}
+.portfolio ul li:last-child {
+    margin-right: 0px;
+}
+.drum_pad{
+    width: 380px;
+    height: 200px;
+    object-fit: cover;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.proj {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.pad {
+    width: 40%;
+    text-align: justify;
+}
+#visit, .pad a {
+    margin-left: 15px;
+}
+.proj div p, .proj div h3 {
+    padding: 0px 15px;
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    border-top: 2px solid red;
+    width: 103%;
+    margin-left: -20px;
+    border-radius: 30%;
+}
+.fillform {
+    margin-top: 50px;
+    display: flex;
+    width: 80%;
+}
+.phone {
+    width: 80%;
+    margin-right: 10%;
+}
+@media only screen and (max-width: 769px) {
+    header {
+        justify-content: left;
+    }
+    .logo {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .nav_links {
+        display: none;
+    }
+    .intro_pic {
+        width: 200px;
+    }
+    .proj {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+    .drum_pad {
+        width: 50%;
+        height: 50%;
+    }
+    .proj div{
+        width: 50%
+    }
+    .projects {
+        padding: 0px 20px;
+    }
+    .intro {
+        margin-left: 40px
+    }
+} 
