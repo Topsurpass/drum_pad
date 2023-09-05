@@ -1,5 +1,6 @@
 import React from 'react'
 import './landing.css'
+import { useState } from 'react';
 import myPic from '../images/portfolio.jpg'
 import card from '../images/Card.png'
 import country from '../images/Country.png'
@@ -7,21 +8,61 @@ import drum from '../images/Drum.png'
 import { useNavigate } from 'react-router-dom';
 import shell from '../images/shell.png'
 import { Form } from '../Form Compo/Form'
+import axios from 'axios';
 
 
 export const LandingPage = () => {
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [messg, setMessg] = useState('')
+  
+    const handleName = (event) => {
+      setName(event.target.value);
+    }
+    const handleEmail = (event) => {
+        setEmail(event.target.value);
+    }
+    const handleMessage = (event) => {
+        setMessg(event.target.value);
+    }
+    // Make a post request to the server
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const data = {
+            'name' : name,
+            'email' : email,
+            'message' : messg
+        };
+        axios.post('http://localhost:5000/api/v1/', data, {
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => {
+            alert(response.data);
+            setName("");
+            setEmail("");
+            setMessg("");
+        })
+        .catch(err => {
+            alert(err);
+        })
+    }
+  
     const navigate = useNavigate();
     const visitLink = ()=> navigate('/drum_machine');
     const home = () =>navigate('/');
+
   return (
     <div className='contain'>
         <header>
-            <div className='logo' onClick={home}>TEMZ</div>
+            <div className='logo' id="home" onClick={home}>TEMZ</div>
             <nav className='nav_links'>
                 <ul>
-                    <li>HOME</li>
-                    <li>ABOUT ME</li>
-                    <li>PORTFOLIO</li>
+                    <a href='#home' onClick={home}><li>HOME</li></a>
+                    <a href='#about'><li>ABOUT ME</li></a>
+                    <a href="#portfolio"><li>PORTFOLIO</li></a>
                 </ul>
                 <button className='contact'><a href='#Contact_us' className='footCon'>CONTACT</a></button>
             </nav>          
@@ -30,7 +71,7 @@ export const LandingPage = () => {
             <section className='intro'>
                 <p className='desc'>I'm a </p>
                 <p className='job_title'>FULL STACK SOFTWARE<br/>ENGINEER .</p>
-                <button className='contact'><a href='#previous_project'>Previous Projects</a></button>
+                <button className='contact'><a href='#portfolio'>Previous Projects</a></button>
             </section>
 
             <section className='about'>
@@ -38,7 +79,7 @@ export const LandingPage = () => {
                     <img src={myPic} alt='TEMITOPE' className='profile_pic'/>
                 </div>
                 <div className='intro_text'>
-                    <h3>ABOUT ME</h3>
+                    <h3 id="about">ABOUT ME</h3>
                     <p>I am Olowosuyi Temitope, a dedicated Full Stack Software Engineer with a passion 
                         for creating innovative web applications and solutions. My journey in the world
                          of software development has equipped me with a diverse skill set, enabling me 
@@ -55,7 +96,7 @@ export const LandingPage = () => {
             </section>
 
             <article>
-                <section className='portfolio' id='previous_project'>
+                <section className='portfolio' id='portfolio'>
                     <h3>PORTFOLIO</h3>
                     <ul>
                         <li>Mobile</li>
@@ -77,7 +118,7 @@ export const LandingPage = () => {
                             </p>
                             <button id="visit" onClick={visitLink}>Play Drumpad</button>
                         </div>
-                        <img src={drum} alt='Drum pad' className='drum_pad'/>
+                        <img src={drum} alt='Drum pad' className='drum_pad space'/>
                     </div>
 
                     <div className='proj'>
@@ -90,7 +131,7 @@ export const LandingPage = () => {
                             </p>
                             <button id="visit"><a href='https://github.com/Topsurpass/simple_shell' target='_blank' rel='noreferrer'> Install shell </a></button>
                         </div>
-                        <img src={shell} alt='Simple shell' className='drum_pad'/>                      
+                        <img src={shell} alt='Simple shell' className='drum_pad space'/>                      
                     </div>
 
                     <div className='proj'>
@@ -127,12 +168,14 @@ export const LandingPage = () => {
                             discuss the service you need me to render for you.<br/>
                             You can also reach me via the below means:
                         </p>
-                        <a href='/hfgg'>Phone:  +2348107304148</a><br/>
-                        <a href='/hyh'>Email:  temitopeabiodun685@gmail.com</a>
+                        <a href="tel:+2348107304148">Phone:  +2348107304148</a><br/>
+                        <a href="mailto:temitopeabiodun685@gmail.com">Email:  temitopeabiodun685@gmail.com</a>
                         <p>Address: Lagos, Nigeria</p>
 
                     </div>
-                    <Form/>
+                    <Form myname  = {name} myemail = {email} mytext = {messg}
+                        changeName = {handleName} changeEmail = {handleEmail}
+                        changeMytext = {handleMessage} nowSubmit = {handleSubmit}/>
                 </div>
             </footer>
         </main>

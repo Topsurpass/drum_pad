@@ -13,9 +13,9 @@ header {
 }
 
 .logo {
-    width: 10%;
+    width: 150px;
     border: 2px solid #4a37c1;
-    height: 33px;
+    height: 40px;
     margin-top: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -34,6 +34,11 @@ nav ul {
     display: flex;
     list-style-type: none;
     margin-right: 10%;
+}
+nav ul a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
 }
 nav ul li {
     margin-left: 10px;
@@ -181,20 +186,36 @@ section .job_title {
     }
     .proj {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        width: 100%;
         margin-top: 50px;
     }
     .drum_pad {
-        width: 50%;
+        width: 93%;
         height: 50%;
-    }
-    .proj div{
-        width: 50%
     }
     .projects {
         padding: 0px 20px;
     }
     .intro {
         margin-left: 40px
+    }
+    .fillform {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 20px;
+    }
+    .pad {
+        width: 100%;
+    }
+    .phone {
+        margin-right: 0px;
+    }
+    .space {
+        margin-top: 5px
     }
 } 
