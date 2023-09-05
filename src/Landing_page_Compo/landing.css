@@ -110,6 +110,7 @@ section .job_title {
 .portfolio ul{
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style-type: none;
     width: 100%;
 }
@@ -117,7 +118,7 @@ section .job_title {
      margin-left: 40px;
 }
 .portfolio ul li:first-child {
-    margin-left: 0px;
+    margin-left: -40px;
 }
 .portfolio ul li:last-child {
     margin-right: 0px;
@@ -172,7 +173,8 @@ section .job_title {
 }
 @media only screen and (max-width: 769px) {
     header {
-        justify-content: left;
+        justify-content:flex-start;
+        margin-left: -32px;
     }
     .logo {
         margin-top: 20px;
@@ -182,7 +184,10 @@ section .job_title {
         display: none;
     }
     .intro_pic {
-        width: 200px;
+        width: 300px;
+    }
+    .intro_text {
+        width: 90%;
     }
     .proj {
         display: flex;
@@ -198,7 +203,7 @@ section .job_title {
         padding: 0px 20px;
     }
     .intro {
-        margin-left: 40px
+        margin-left: -0px
     }
     .fillform {
         margin-top: 50px;
@@ -217,5 +222,10 @@ section .job_title {
     }
     .space {
         margin-top: 5px
+    }
+    .about {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 } 
