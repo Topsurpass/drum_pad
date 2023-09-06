@@ -12,7 +12,7 @@ class DBStorage:
     def __init__(self):
         """Connect to database once an instance of the storage is created"""
         self.__engine = create_engine("mysql+mysqldb://{}:{}@{}/{}".format(
-            'root', 'Temitope_12', '127.0.0.1', 'Portfolio'
+            'root', 'Temitope_12', '54.237.54.19', 'Portfolio'
         ), pool_pre_ping=True)
       
     def reload(self):
