@@ -34,7 +34,7 @@ export const LandingPage = () => {
             'email' : email,
             'message' : messg
         };
-        axios.post('http://54.146.64.168/api/v1/', data, {
+        axios.post('https://54.146.64.168/api/v1/', data, {
             headers: {
                 'Content-Type': 'application/json',
             },
