@@ -4,7 +4,7 @@ from __init__ import storage
 from user import User
 
 app = Flask(__name__)
-CORS(app, origin="https://temzportfolio.netlify.app/")
+CORS(app, origin="0.0.0.0")
 
 # app.register_blueprint(app_views)
 
