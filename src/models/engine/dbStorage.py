@@ -10,7 +10,7 @@ class DBStorage:
     __session = None
 
     def __init__(self):
-        """Connect to database once an instance of the storage is created"""
+        """Connect to database of the server once an instance of the storage is created"""
         self.__engine = create_engine("mysql+mysqldb://{}:{}@{}/{}".format(
             'root', 'vagrant', '127.0.0.1', 'Portfolio'
         ), pool_pre_ping=True)
