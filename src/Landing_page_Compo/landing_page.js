@@ -17,6 +17,7 @@ export const LandingPage = () => {
     const [email, setEmail] = useState('')
     const [messg, setMessg] = useState('')
   
+    // Control the email, name and message field from react
     const handleName = (event) => {
       setName(event.target.value);
     }
@@ -34,7 +35,7 @@ export const LandingPage = () => {
             'email' : email,
             'message' : messg
         };
-        axios.post('http://0.0.0.0:5000/api/v1/', data, {
+        axios.post('http://drumpad.temz.tech/api/v1/', data, {
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -80,17 +81,12 @@ export const LandingPage = () => {
                 </div>
                 <div className='intro_text'>
                     <h3 id="about">ABOUT ME</h3>
-                    <p>I am Olowosuyi Temitope, a dedicated Full Stack Software Engineer with a passion 
-                        for creating innovative web applications and solutions. My journey in the world
-                         of software development has equipped me with a diverse skill set, enabling me 
-                         to excel in both frontend and backend development. I am proficient in <strong>React</strong> and 
-                         framework like <strong>Typscript</strong>, as well as backend technologies like Python 
-                         and Node.js and their frameworks like <strong>Express.js and flask</strong>. Being a Full Stack 
-                         Software Engineer, I am proficient in integrating 
-                         frontend and backend components seamlessly. This includes developing RESTful APIs, 
-                         managing databases, and ensuring efficient communication between the frontend and 
-                         backend layers. My ability to work across the entire stack allows me to bring 
-                         projects from concept to completion.
+                    <p>I am Olowosuyi Temitope, a current student of ALX software engineering program and
+                        a dedicated Full Stack Software Engineer with a passion 
+                        for creating innovative web applications and solutions. With my passion to be a Full Stack 
+                         Software Engineer, I aim to integrate frontend and backend components seamlessly, developing 
+                         RESTful APIs enpoints, managing databases, and ensuring efficient communication between the frontend and 
+                         backend layers. The ability to be able to work across the entire stack is one thing that inspires me alot.     projects from concept to completion.
                     </p>
                 </div>
             </section>

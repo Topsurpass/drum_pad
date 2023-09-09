@@ -6,7 +6,6 @@ from user import User
 app = Flask(__name__)
 CORS(app, origin="0.0.0.0")
 
-# app.register_blueprint(app_views)
 
 @app.teardown_appcontext
 def tear_down(self):
@@ -26,6 +25,7 @@ def getUser():
 
 @app.route('/api/v1', methods=['POST'], strict_slashes=False)
 def postUser():
+    """Post new data to the database"""
     if not request.get_json():
         return jsonify({'error': "Wrong format, not a json format"})
     elif 'name' and 'email' and 'message' not in request.get_json():
