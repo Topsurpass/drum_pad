@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """This class contains our storage and all connection to the database"""
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session

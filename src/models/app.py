@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+"""This module contains the Post api endpoint needed to connect with the fronend form"""
 from flask_cors import CORS
 from flask import Flask, jsonify, make_response, request
 from __init__ import storage
@@ -5,8 +7,6 @@ from user import User
 
 app = Flask(__name__)
 CORS(app, origin="0.0.0.0")
-
-# app.register_blueprint(app_views)
 
 @app.teardown_appcontext
 def tear_down(self):
@@ -35,7 +35,6 @@ def postUser():
         obj_data = User(**post_data)
         obj_data.save()
         return jsonify("Your message has been sent successfully.")
-
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(5000), threaded=True)

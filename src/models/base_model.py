@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """This class contains the base class for all other classes i.e other classes
 inherit from the base class"""
 

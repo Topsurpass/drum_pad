@@ -34,7 +34,7 @@ export const LandingPage = () => {
             'email' : email,
             'message' : messg
         };
-        axios.post('http://0.0.0.0:5000/api/v1/', data, {
+        axios.post('https://drumpad.temz.tech/api/v1/', data, {
             headers: {
                 'Content-Type': 'application/json',
             },
