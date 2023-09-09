@@ -8,10 +8,6 @@ from user import User
 app = Flask(__name__)
 CORS(app, origin="0.0.0.0")
 
-<<<<<<< HEAD
-=======
-
->>>>>>> ab10b298f989791f8b1e785c38b5837ba2bc5d41
 @app.teardown_appcontext
 def tear_down(self):
     """Close storage after each session"""
