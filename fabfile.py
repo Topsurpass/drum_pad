@@ -9,3 +9,6 @@ def run_server():
     the output from my end"""
     with hide("output"):
         run("nohup python3 ./models/app.py &", pty=False)
+
+def pushfiles():
+    put("./build", "./")
