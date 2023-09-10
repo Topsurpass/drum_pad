@@ -2,9 +2,11 @@
 **Tagline: Creating beats, one key at a time!**
 ## Introduction
 The Mini Drum pad Application is a software project that aims to create a simple and interactive drum pad, allowing users to produce beats using designated keyboard keys. The application will provide an intuitive user interface, offering a fun and creative way for music enthusiasts to experiment with drum sounds.
+![Drum pad](./src/images/myDrum.png)
+- [Try our drumpad](drumpad.temz.tech/drum_machine)
+- [Author's linkedin profile](https://www.linkedin.com/in/temitope-olowosuyi-49ba29174/)
 ## Team Members
-- Olowosuyi Temitope
-- Favour Edubio
+This project was done by me, Olowosuyi Temitope but open for more contributions.
 ## Technologies
 The project will be developed using the following technologies:
 - React: For building the user interface and managing components efficiently.
@@ -50,5 +52,9 @@ The primary challenges our project will experience due to time constraints and o
 - Limited Keyboard Input: Our drum pad will be designed using only the specified keyboard keys (Q, W, E, A, S, D, Z, X, C).
 - Inability to get access to real keyboard sounds to populate our app.
 - Our app is designed for only beginners due to its limited features.
+## Contribution
+This project is open for contributions. Incase you want to contribute to this project, just fork the project, make your changes with nice comments and commit message, and I will merge from my end. Afterwards, you will be added as one of the contributors.
 ## Conclusion
 The Mini Drum pad Application will offer a creative and enjoyable experience for users to produce their drum beats using a minimal set of keyboard keys. By combining the power of React, Redux, HTML, CSS, and JavaScript, we aim to deliver a user-friendly, feature-rich, and aesthetically pleasing application that sparks the musical inspiration of users.
+## Authors
+- Olowosuyi Temitope - [Linkedin](https://www.linkedin.com/in/temitope-olowosuyi-49ba29174/)
